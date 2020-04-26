@@ -203,7 +203,7 @@ func ParseInt(s string, base int, bitSize int) (i int64, err error) {
 	}
 
 	if bitSize == 0 {
-		bitSize = int(IntSize)
+		bitSize = IntSize
 	}
 
 	cutoff := uint64(1 << uint(bitSize-1))
